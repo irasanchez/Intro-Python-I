@@ -27,10 +27,10 @@ print("3. Version: ", sys.version)
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
 # Print the current process ID
-# YOUR CODE HERE
+print("4. Current Process ID: ", os.getpid())
 
 # Print the current working directory (cwd):
-# YOUR CODE HERE
+print("5. Current Working Directory: ", os.getcwd())
 
 # Print out your machine's login name
-# YOUR CODE HERE
+print("6. Login Name: ", os.getlogin())

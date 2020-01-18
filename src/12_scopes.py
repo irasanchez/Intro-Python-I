@@ -5,6 +5,8 @@
 x = 12
 
 def changeX():
+    # bring the global variable into this scope to be able to change it
+    global x
     x = 99
 
 changeX()
@@ -19,6 +21,7 @@ def outer():
     y = 120
 
     def inner():
+        nonlocal y
         y = 999
 
     inner()

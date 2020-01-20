@@ -19,6 +19,7 @@ class Waypoint(LatLon):
     def __str__(self):
         return f"I am a Waypoint called {self.name} at {self.lat}, {self.lon}"
 
+
 class Geocache(Waypoint):
     """A class that can be passed parameters `name`, `difficulty`, `size`, `lat`, and `lon` to the constructor.
     It inherits from Waypoint."""
@@ -30,6 +31,7 @@ class Geocache(Waypoint):
     def __str__(self):
         return f"I am a Geocache with {self.difficulty} diff and {self.size} size. " \
                f"I am at a Waypoint called {self.name} at {self.lat}, {self.lon}"
+
 
 # Make a new waypoint and print it out: "Catacombs", 41.70505, -121.51521
 waypoint = Waypoint("Catacombs", 41.70505, -121.51521)

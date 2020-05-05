@@ -65,10 +65,12 @@ def f4(**kwargs):
     for key, value in kwargs.items():
         print("key: ", key, "value: ", value)
 
+
 # Should print
 # key: a, value: 12
 # key: b, value: 30
 f4(a=12, b=30)
+
 
 # Should print
 # key: city, value: Berkeley
